@@ -12,14 +12,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-  
+
       - name: Build Alfred Workflow
         id: alfred_builder
         uses: mperezi/build-alfred-workflow@v1.0.1
         with:
           workflow_dir: .
-          exclude_patterns: '.github .git'
-          
+          exclude_patterns: '.github/ .git/ screenshots/'
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -30,7 +30,7 @@ jobs:
           release_name: ${{ github.ref }}
           draft: false
           prerelease: false
-          
+
       - name: Upload Alfred Workflow
         uses: actions/upload-release-asset@v1
         env:
