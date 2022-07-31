@@ -23,7 +23,7 @@ only.
 
 ## Installation
 
-Download the workflow from GitHub and open it.
+Download the workflow from GitHub the [latest release page](https://github.com/dkarter/alfred-switch-audio/releases/latest) and open it :)
 
 ## Usage
 
