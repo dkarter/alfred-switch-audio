@@ -15,7 +15,7 @@ jobs:
 
       - name: Build Alfred Workflow
         id: alfred_builder
-        uses: mperezi/build-alfred-workflow@v1.0.1
+        uses: mperezi/build-alfred-workflow@v1.1
         with:
           workflow_dir: .
           exclude_patterns: '.github/ .git/ screenshots/'
